@@ -74,3 +74,9 @@ export const signin = async(req,res)=>{
     }
 }
 
+export const dashboard = async(req,res)=>{
+    res.json({
+         message: "Welcome", user: req.user
+    })
+}
+
