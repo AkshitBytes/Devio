@@ -1,0 +1,692 @@
+[
+  {
+    "id": "q001",
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "HashMap"
+    ],
+    "points": 50,
+    "description": "Given an array of integers nums and an integer target, return the indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.",
+    "input_format": "First line: n (size of array)\nSecond line: n space-separated integers\nThird line: target integer",
+    "output_format": "Print two indices (0-indexed) separated by a space",
+    "constraints": "2 <= n <= 10^5\n-10^9 <= nums[i] <= 10^9",
+    "examples": [
+      {
+        "input": "4\n2 7 11 15\n9",
+        "output": "0 1"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q002",
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "tags": [
+      "Stack",
+      "String"
+    ],
+    "points": 50,
+    "description": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if open brackets are closed by the same type of brackets in the correct order.",
+    "input_format": "Single line string s",
+    "output_format": "Print true or false",
+    "constraints": "1 <= s.length <= 10^4",
+    "examples": [
+      {
+        "input": "()[]{}",
+        "output": "true"
+      },
+      {
+        "input": "([)]",
+        "output": "false"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q003",
+    "title": "Maximum Subarray Sum",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "points": 100,
+    "description": "Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum. This is the classic Kadane's Algorithm problem.",
+    "input_format": "First line: n\nSecond line: n space-separated integers",
+    "output_format": "Print the maximum subarray sum",
+    "constraints": "1 <= n <= 10^5\n-10^4 <= nums[i] <= 10^4",
+    "examples": [
+      {
+        "input": "9\n-2 1 -3 4 -1 2 1 -5 4",
+        "output": "6"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q004",
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "tags": [
+      "Binary Search",
+      "Array"
+    ],
+    "points": 50,
+    "description": "Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return -1. You must write an algorithm with O(log n) runtime complexity.",
+    "input_format": "First line: n\nSecond line: n sorted space-separated integers\nThird line: target",
+    "output_format": "Print index (0-indexed) or -1",
+    "constraints": "1 <= n <= 10^4\n-10^4 <= nums[i] <= 10^4",
+    "examples": [
+      {
+        "input": "6\n-1 0 3 5 9 12\n9",
+        "output": "4"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q005",
+    "title": "Reverse String",
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Two Pointers"
+    ],
+    "points": 50,
+    "description": "Write a function that reverses a string. The input is given as a string, and you should return the reversed version.",
+    "input_format": "Single line string",
+    "output_format": "Print the reversed string",
+    "constraints": "1 <= s.length <= 10^5",
+    "examples": [
+      {
+        "input": "hello",
+        "output": "olleh"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q006",
+    "title": "Count Vowels",
+    "difficulty": "Easy",
+    "tags": [
+      "String"
+    ],
+    "points": 50,
+    "description": "Given a string, count the number of vowels (a, e, i, o, u). The check should be case-insensitive.",
+    "input_format": "Single line string",
+    "output_format": "Print the count of vowels",
+    "constraints": "1 <= s.length <= 10^5",
+    "examples": [
+      {
+        "input": "Hello World",
+        "output": "3"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q007",
+    "title": "Move Zeroes",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "points": 100,
+    "description": "Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements. Print the modified array.",
+    "input_format": "First line: n\nSecond line: n space-separated integers",
+    "output_format": "Print the modified array space-separated",
+    "constraints": "1 <= n <= 10^5",
+    "examples": [
+      {
+        "input": "5\n0 1 0 3 12",
+        "output": "1 3 12 0 0"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q008",
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "tags": [
+      "String",
+      "Sliding Window",
+      "HashMap"
+    ],
+    "points": 100,
+    "description": "Given a string s, find the length of the longest substring without repeating characters. Use a sliding window approach for optimal performance.",
+    "input_format": "Single line string",
+    "output_format": "Print the length of the longest substring",
+    "constraints": "0 <= s.length <= 5*10^4",
+    "examples": [
+      {
+        "input": "abcabcbb",
+        "output": "3"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q009",
+    "title": "Palindrome Number",
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ],
+    "points": 50,
+    "description": "Given an integer x, return true if x is a palindrome, and false otherwise. An integer is a palindrome when it reads the same forward and backward.",
+    "input_format": "Single integer x",
+    "output_format": "Print true or false",
+    "constraints": "-2^31 <= x <= 2^31 - 1",
+    "examples": [
+      {
+        "input": "121",
+        "output": "true"
+      },
+      {
+        "input": "-121",
+        "output": "false"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q010",
+    "title": "Climbing Stairs",
+    "difficulty": "Medium",
+    "tags": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "points": 100,
+    "description": "You are climbing a staircase. It takes n steps to reach the top. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+    "input_format": "Single integer n",
+    "output_format": "Print the number of distinct ways",
+    "constraints": "1 <= n <= 45",
+    "examples": [
+      {
+        "input": "3",
+        "output": "3"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q011",
+    "title": "FizzBuzz",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "String"
+    ],
+    "points": 30,
+    "description": "Given an integer n, for each number from 1 to n print: 'FizzBuzz' if divisible by both 3 and 5, 'Fizz' if divisible by 3, 'Buzz' if divisible by 5, otherwise print the number itself.",
+    "input_format": "Single integer n",
+    "output_format": "Print n lines, one output per number",
+    "constraints": "1 <= n <= 10^4",
+    "examples": [
+      {
+        "input": "5",
+        "output": "1\n2\nFizz\n4\nBuzz"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q012",
+    "title": "Single Number",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Bit Manipulation"
+    ],
+    "points": 50,
+    "description": "Given a non-empty array of integers where every element appears twice except for one, find that single element. Your solution must have O(n) runtime complexity and O(1) space complexity. (Hint: XOR)",
+    "input_format": "First line: n\nSecond line: n space-separated integers",
+    "output_format": "Print the single number",
+    "constraints": "1 <= n <= 3*10^4",
+    "examples": [
+      {
+        "input": "5\n4 1 2 1 2",
+        "output": "4"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q013",
+    "title": "Merge Sorted Arrays",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "points": 50,
+    "description": "Given two sorted arrays, merge them into a single sorted array and print the result.",
+    "input_format": "First line: m (size of first array)\nSecond line: m space-separated integers\nThird line: n (size of second array)\nFourth line: n space-separated integers",
+    "output_format": "Print the merged sorted array space-separated",
+    "constraints": "0 <= m, n <= 200",
+    "examples": [
+      {
+        "input": "3\n1 2 3\n3\n2 5 6",
+        "output": "1 2 2 3 5 6"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q014",
+    "title": "Find Peak Element",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "points": 100,
+    "description": "A peak element is an element that is strictly greater than its neighbors. Given an integer array nums, find a peak element and return its index. If the array contains multiple peaks, return any peak's index. Must be O(log n).",
+    "input_format": "First line: n\nSecond line: n space-separated integers",
+    "output_format": "Print the index of any peak element",
+    "constraints": "1 <= n <= 1000\n-2^31 <= nums[i] <= 2^31 - 1",
+    "examples": [
+      {
+        "input": "5\n1 2 3 1 0",
+        "output": "2"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q015",
+    "title": "Balanced Brackets",
+    "difficulty": "Medium",
+    "tags": [
+      "Stack",
+      "String"
+    ],
+    "points": 100,
+    "description": "Given a string with multiple bracket types '()', '[]', '{}', determine the minimum number of bracket reversals needed to make the string balanced. If it's impossible, print -1.",
+    "input_format": "Single line string containing only bracket characters",
+    "output_format": "Print minimum reversals or -1",
+    "constraints": "1 <= s.length <= 10^4",
+    "examples": [
+      {
+        "input": "))(",
+        "output": "-1"
+      },
+      {
+        "input": "}({)",
+        "output": "3"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q016",
+    "title": "Matrix Spiral Order",
+    "difficulty": "Medium",
+    "tags": [
+      "Matrix",
+      "Array"
+    ],
+    "points": 100,
+    "description": "Given an m x n matrix, return all elements of the matrix in spiral order (clockwise from the top-left).",
+    "input_format": "First line: m n (rows and columns)\nNext m lines: n space-separated integers each",
+    "output_format": "Print all elements space-separated in spiral order",
+    "constraints": "m == matrix.length\nn == matrix[i].length\n1 <= m, n <= 10",
+    "examples": [
+      {
+        "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+        "output": "1 2 3 6 9 8 7 4 5"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q017",
+    "title": "Anagram Check",
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "HashMap",
+      "Sorting"
+    ],
+    "points": 50,
+    "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise. An anagram uses all original letters exactly once.",
+    "input_format": "First line: string s\nSecond line: string t",
+    "output_format": "Print true or false",
+    "constraints": "1 <= s.length, t.length <= 5*10^4",
+    "examples": [
+      {
+        "input": "anagram\nnagaram",
+        "output": "true"
+      },
+      {
+        "input": "rat\ncar",
+        "output": "false"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q018",
+    "title": "Power of Two",
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Bit Manipulation"
+    ],
+    "points": 30,
+    "description": "Given an integer n, return true if it is a power of two, otherwise return false. An integer n is a power of two if there exists an integer x such that n == 2^x.",
+    "input_format": "Single integer n",
+    "output_format": "Print true or false",
+    "constraints": "-2^31 <= n <= 2^31 - 1",
+    "examples": [
+      {
+        "input": "16",
+        "output": "true"
+      },
+      {
+        "input": "3",
+        "output": "false"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q019",
+    "title": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "tags": [
+      "String"
+    ],
+    "points": 50,
+    "description": "Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty line.",
+    "input_format": "First line: n (number of strings)\nNext n lines: one string each",
+    "output_format": "Print the longest common prefix, or empty line if none",
+    "constraints": "1 <= n <= 200\n0 <= strs[i].length <= 200",
+    "examples": [
+      {
+        "input": "3\nflower\nflow\nflight",
+        "output": "fl"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q020",
+    "title": "Remove Duplicates from Sorted Array",
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "points": 50,
+    "description": "Given an integer array nums sorted in non-decreasing order, remove duplicates in-place. Print the count of unique elements followed by the unique elements themselves.",
+    "input_format": "First line: n\nSecond line: n sorted space-separated integers",
+    "output_format": "First print k (unique count), then k unique elements space-separated",
+    "constraints": "1 <= n <= 3*10^4\n-100 <= nums[i] <= 100",
+    "examples": [
+      {
+        "input": "5\n1 1 2 2 3",
+        "output": "3\n1 2 3"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q021",
+    "title": "Coin Change",
+    "difficulty": "Medium",
+    "tags": [
+      "Dynamic Programming",
+      "BFS"
+    ],
+    "points": 150,
+    "description": "You are given an integer array coins representing coins of different denominations and an integer amount. Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.",
+    "input_format": "First line: n (number of coin types)\nSecond line: n space-separated coin denominations\nThird line: target amount",
+    "output_format": "Print minimum coins needed or -1",
+    "constraints": "1 <= n <= 12\n1 <= coins[i] <= 2^31-1\n0 <= amount <= 10^4",
+    "examples": [
+      {
+        "input": "3\n1 5 6\n11",
+        "output": "2"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q022",
+    "title": "Number of Islands",
+    "difficulty": "Medium",
+    "tags": [
+      "Graph",
+      "BFS",
+      "DFS",
+      "Matrix"
+    ],
+    "points": 150,
+    "description": "Given an m x n 2D binary grid where '1' is land and '0' is water, count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.",
+    "input_format": "First line: m n\nNext m lines: n space-separated values (0 or 1)",
+    "output_format": "Print the number of islands",
+    "constraints": "1 <= m, n <= 300",
+    "examples": [
+      {
+        "input": "4 5\n1 1 1 1 0\n1 1 0 1 0\n1 1 0 0 0\n0 0 0 0 0",
+        "output": "1"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q023",
+    "title": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Stack"
+    ],
+    "points": 200,
+    "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+    "input_format": "First line: n\nSecond line: n space-separated non-negative integers",
+    "output_format": "Print the total water trapped",
+    "constraints": "n == height.length\n1 <= n <= 2*10^4\n0 <= height[i] <= 10^5",
+    "examples": [
+      {
+        "input": "12\n0 1 0 2 1 0 1 3 2 1 2 1",
+        "output": "6"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q024",
+    "title": "Longest Increasing Subsequence",
+    "difficulty": "Hard",
+    "tags": [
+      "Dynamic Programming",
+      "Binary Search"
+    ],
+    "points": 200,
+    "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence. A subsequence is derived from an array by deleting some elements without changing the order of remaining elements.",
+    "input_format": "First line: n\nSecond line: n space-separated integers",
+    "output_format": "Print the length of the longest increasing subsequence",
+    "constraints": "1 <= n <= 2500\n-10^4 <= nums[i] <= 10^4",
+    "examples": [
+      {
+        "input": "8\n10 9 2 5 3 7 101 18",
+        "output": "4"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q025",
+    "title": "Word Search",
+    "difficulty": "Hard",
+    "tags": [
+      "Matrix",
+      "DFS",
+      "Backtracking"
+    ],
+    "points": 200,
+    "description": "Given an m x n grid of characters board and a string word, return true if word exists in the grid. The word can be constructed from sequentially adjacent cells (horizontally or vertically neighboring). The same cell may not be used more than once.",
+    "input_format": "First line: m n\nNext m lines: n space-separated characters\nLast line: the target word",
+    "output_format": "Print true or false",
+    "constraints": "1 <= m, n <= 6\n1 <= word.length <= 15",
+    "examples": [
+      {
+        "input": "4 4\nA B C E\nS F C S\nA D E E\nB S A B\nABCCED",
+        "output": "true"
+      }
+    ],
+    "time_limit": 2,
+    "memory_limit": 256
+  },
+  {
+    "id": "q026",
+    "title": "Rotate Array",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Math"
+    ],
+    "points": 100,
+    "description": "Given an integer array nums, rotate the array to the right by k steps, where k is non-negative. Print the rotated array.",
+    "input_format": "First line: n\nSecond line: n space-separated integers\nThird line: k",
+    "output_format": "Print the rotated array space-separated",
+    "constraints": "1 <= n <= 10^5\n0 <= k <= 10^5",
+    "examples": [
+      {
+        "input": "7\n1 2 3 4 5 6 7\n3",
+        "output": "5 6 7 1 2 3 4"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q027",
+    "title": "Product of Array Except Self",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Prefix Sum"
+    ],
+    "points": 150,
+    "description": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. Solve it without using division in O(n) time.",
+    "input_format": "First line: n\nSecond line: n space-separated integers",
+    "output_format": "Print the result array space-separated",
+    "constraints": "2 <= n <= 10^5\n-30 <= nums[i] <= 30",
+    "examples": [
+      {
+        "input": "4\n1 2 3 4",
+        "output": "24 12 8 6"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q028",
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "points": 150,
+    "description": "Given an integer array nums, return all triplets [nums[i], nums[j], nums[k]] such that i, j, k are distinct and nums[i] + nums[j] + nums[k] == 0. Print one triplet per line in sorted order. No duplicate triplets.",
+    "input_format": "First line: n\nSecond line: n space-separated integers",
+    "output_format": "Print each unique triplet sorted in ascending order, one per line. Print 'none' if no triplets found.",
+    "constraints": "3 <= n <= 3000\n-10^5 <= nums[i] <= 10^5",
+    "examples": [
+      {
+        "input": "6\n-1 0 1 2 -1 -4",
+        "output": "-1 -1 2\n-1 0 1"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q029",
+    "title": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Divide and Conquer"
+    ],
+    "points": 250,
+    "description": "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be O(log(m+n)). Print with exactly 1 decimal place.",
+    "input_format": "First line: m\nSecond line: m sorted integers\nThird line: n\nFourth line: n sorted integers",
+    "output_format": "Print the median with 1 decimal place",
+    "constraints": "0 <= m, n <= 1000\n-10^6 <= nums[i] <= 10^6",
+    "examples": [
+      {
+        "input": "2\n1 3\n1\n2",
+        "output": "2.0"
+      }
+    ],
+    "time_limit": 1,
+    "memory_limit": 256
+  },
+  {
+    "id": "q030",
+    "title": "N-Queens",
+    "difficulty": "Hard",
+    "tags": [
+      "Backtracking",
+      "Array"
+    ],
+    "points": 250,
+    "description": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other. Given an integer n, return the total number of distinct solutions.",
+    "input_format": "Single integer n",
+    "output_format": "Print the number of distinct solutions",
+    "constraints": "1 <= n <= 9",
+    "examples": [
+      {
+        "input": "4",
+        "output": "2"
+      },
+      {
+        "input": "1",
+        "output": "1"
+      }
+    ],
+    "time_limit": 2,
+    "memory_limit": 256
+  }
+]
