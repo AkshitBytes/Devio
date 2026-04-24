@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import app from "./src/app.js";
 import connectDB from "./src/config/db.js";
 import { registerBattleSocket } from "./src/sockets/battle.socket.js";
-import { registerClassroomSocket } from "./src/sockets/classroom.socket.js";
+import { attachClassroomSocket } from "./src/controllers/classroom.controller.js";
 import { YSocketIO } from "y-socket.io/dist/server";
 
 dotenv.config();
@@ -17,7 +17,7 @@ const io = new Server(httpServer, {
 
 // Register socket namespaces
 registerBattleSocket(io);
-registerClassroomSocket(io);
+attachClassroomSocket(io);
 
 // Yjs CRDT sync over Socket.IO namespaces: /^\/yjs\|.*$/
 const ysocketio = new YSocketIO(io);

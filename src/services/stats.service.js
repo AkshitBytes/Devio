@@ -66,3 +66,26 @@ export const awardBattleWin = async (userId, bonusPoints = 100) => {
 
     return user;
 };
+
+export const awardBattleResult = async (winnerId, loserId, streakBooster = false) => {
+    const baseWin = 120;
+    const baseLoss = 30;
+    const booster = streakBooster ? 50 : 0;
+
+    const winPoints = baseWin + booster;
+    const lossPoints = baseLoss;
+
+    if (winnerId) {
+        await awardBattleWin(winnerId, winPoints);
+    }
+    if (loserId) {
+        await markUserActive(loserId);
+        const loser = await usermodel.findById(loserId);
+        if (loser) {
+            loser.points += lossPoints;
+            await loser.save();
+        }
+    }
+
+    return { winPoints, lossPoints };
+};
