@@ -424,9 +424,10 @@ export const endClassroom = async (req, res) => {
         .status(403)
         .json({ message: "Only the teacher can end the class" });
 
-    classroom.isActive = false;
+    classroom.status = "ended";
+    classroom.endedAt = new Date();
     await classroom.save();
-    return res.json({ message: "Class ended" });
+    return res.json({ message: "Class ended", classroom });
   } catch (e) {
     return res.status(500).json({ message: "Server error", error: e.message });
   }

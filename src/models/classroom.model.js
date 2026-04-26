@@ -6,6 +6,8 @@ const classroomSchema = new mongoose.Schema(
     code: { type: String, required: true, unique: true, index: true },
     teacherId: { type: mongoose.Schema.Types.ObjectId, ref: "users", required: true },
     studentIds: [{ type: mongoose.Schema.Types.ObjectId, ref: "users" }],
+    status: { type: String, enum: ["active", "ended"], default: "active" },
+    endedAt: { type: Date, default: null },
   },
   { timestamps: true }
 );
